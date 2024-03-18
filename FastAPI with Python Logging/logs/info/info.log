@@ -4,3 +4,7 @@
 2024-03-18 19:58:25,972 - uvicorn.error - INFO - Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
 2024-03-18 19:58:42,904 - root - INFO - Info log message
 2024-03-18 19:58:49,898 - root - INFO - Info log message
+2024-03-18 20:05:27,368 - uvicorn.error - INFO - Shutting down
+2024-03-18 20:05:27,462 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-03-18 20:05:27,465 - uvicorn.error - INFO - Application shutdown complete.
+2024-03-18 20:05:27,466 - uvicorn.error - INFO - Finished server process [8240]
