@@ -1,4 +1,4 @@
-<h1>This Python script is setting up a logging system for an application using the logging module from the Python standard library.</h1>
+<h2>This Python script is setting up a logging system for an application using the logging module from the Python standard library.</h2>
 
 <h2>Let's break it down:</h2>
 
