@@ -9,11 +9,6 @@
             "username": "admin1",
             "password": "$2b$12$HgB.j3S56BWsO0jkbtAiBu1nA5/D2mZMQSoD0ZZ4iCLIgTOD4Gw6e",
             "role": "admin"
-        },
-        "admin3": {
-            "username": "admin3",
-            "password": "$2b$12$U8qK67y9DOp1sUCuM7OvrOx9ogfvpLeMdOHyIlPaJaVmvLx8rB3QC",
-            "role": "user"
         }
     },
     "resource_role": {
