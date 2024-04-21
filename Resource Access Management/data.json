@@ -1,0 +1,42 @@
+{
+    "users": {
+        "user1": {
+            "username": "user1",
+            "password": "$2b$12$Z9.8QdcBpFiR6LL3KcOBBuJXPOiNTVrZvAj6DPwWPgVl/sSunzGmS",
+            "role": "user"
+        },
+        "admin1": {
+            "username": "admin1",
+            "password": "$2b$12$HgB.j3S56BWsO0jkbtAiBu1nA5/D2mZMQSoD0ZZ4iCLIgTOD4Gw6e",
+            "role": "admin"
+        }
+    },
+    "resource_role": {
+        "admin": {
+            "items": [
+                "read",
+                "write",
+                "delete"
+            ],
+            "blogs": [
+                "read",
+                "write"
+            ]
+        },
+        "user": {
+            "items": [
+                "read"
+            ],
+            "blogs": [
+                "read",
+                "write"
+            ]
+        }
+    },
+    "excluded_paths": [
+        "docs",
+        "openapi.json",
+        "token",
+        "register"
+    ]
+}
