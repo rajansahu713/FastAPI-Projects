@@ -11,5 +11,21 @@ Role-based authentication is a crucial aspect of application security, allowing 
 * Token-based authentication using JWT
 * Secure endpoints based on user roles
 
+Creditional for Generating Token
+
+```json
+# 1
+{
+    "username": "user1",
+    "password": "password"
+}
+
+# 2
+
+{
+    "username": "admin1",
+    "password": "password"
+}
+```
 <br>
 <h3  align="center">Thank You!</h3>
