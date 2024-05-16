@@ -14,9 +14,15 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 4. FastAPI with Python Logging: It is a important for every project to have a logging facility. FastAPI provides a simple and powerful logging facility.
 
-5. 
+5. Pytest Testing With FastAPI: A FastAPI project showcasing how to use Pytest for testing. Testing is essential to ensure the reliability and correctness of your application. This project demonstrates how to write unit and integration tests for FastAPI endpoints.
 
+6. Schedule Your Job with Apscheduler: Learn how to schedule jobs using APScheduler with FastAPI. APScheduler is a library that allows you to schedule tasks to be executed at specific times or intervals. This project demonstrates how to integrate APScheduler with FastAPI to run periodic tasks.
 
+7. Pagination with FastAPI: Implement pagination in FastAPI to handle large datasets efficiently. Pagination is essential for applications dealing with a significant amount of data, enabling you to load data in chunks. This project demonstrates how to add pagination to your FastAPI endpoints.
+
+8. Resource Access Management: A FastAPI project to manage resource access. This project explores various methods for controlling access to resources, including role-based access control (RBAC) and attribute-based access control (ABAC).
+
+9. Fastapi Template Rendering: A FastAPI project demonstrating how to render HTML templates using FastAPI. This project shows how to use Jinja2 templates for rendering dynamic HTML content and includes a basic project structure for easy expansion and maintenance.
 
 
 ## Instructions
