@@ -14,6 +14,8 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 4. FastAPI with Python Logging: It is a important for every project to have a logging facility. FastAPI provides a simple and powerful logging facility.
 
+5. 
+
 
 
 

@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+{% block content %}
+  <h1>Todo List</h1>
+    <form action="/update-task" method="post">
+      {% for task in tasks %}
+        <div class="form-group">
+          <label for="entertask">{{ task | upper }}</label>
+          </h1>{{ tasks[task] }}</h1>
+          <input type="text" {% if task == "id" %} readonly {% endif %}  class="form-control" name={{ task }} placeholder="{{ tasks[task] }}" value= "{{ tasks[task] }}">
+        </div>
+      {% endfor %}        
+      <button type="submit" class="btn btn-primary">UPDATE</button>
+    </form>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+    <table class="table">
+    <thead>
+        <tr>
+            {% for task in tasks[0] %}
+                <th scope="col">{{task | upper }}</th>
+            {% endfor %}
+            {% if tasks %}
+            <th scope="col">DELETE</th>
+            <th scope="col">UPDATE</th>
+            {% endif %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            {% for i in task %}
+            <td>{{ task[i] }}</td>
+            {% endfor %}
+            <td><form action="/delete-task/" method="post"><input type="hidden" name="task_index" value={{ task.get('id') }}><button type="submit">Delete</button></form></td>
+            <td><form action="/update-task/?task_index={{ task.get('id') }}" method="get"><input type="hidden" name="task_index" value={{ task.get('id') }}><button type="submit">Update</button></form></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
+
+
+   
