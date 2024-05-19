@@ -24,6 +24,7 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 9. Fastapi Template Rendering: A FastAPI project demonstrating how to render HTML templates using FastAPI. This project shows how to use Jinja2 templates for rendering dynamic HTML content and includes a basic project structure for easy expansion and maintenance.
 
+10. JWT Authentication In FastAPI: 
 
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
