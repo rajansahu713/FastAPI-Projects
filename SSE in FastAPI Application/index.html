@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Sports Scores</title>
+</head>
+<body>
+    <h1>Live Football Scores</h1>
+    <div id="score-updates"></div>
+
+    <script>
+        const eventSource = new EventSource("http://127.0.0.1:8000/live-scores");
+
+        eventSource.onmessage = function(event) {
+            const newElement = document.createElement("div");
+            newElement.innerHTML = event.data;
+            document.getElementById("score-updates").appendChild(newElement);
+        };
+
+        eventSource.onerror = function(event) {
+            console.error("EventSource failed:", event);
+            eventSource.close();
+        };
+    </script>
+</body>
+</html>

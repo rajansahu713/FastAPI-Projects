@@ -1,0 +1,17 @@
+[
+    {
+        "time": "00:01",
+        "scores":"1:0",
+        "event": "Goal! Team A scores!"
+    },
+    {
+        "time": "00:05",
+        "scores":"1:1",
+        "event": "Goal! Team B scores!"
+    },
+    {
+        "time": "00:10",
+        "scores":"2:1",
+        "event": "Goal! Team A scores again!"
+    }
+]
