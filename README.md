@@ -26,6 +26,14 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 10. JWT Authentication In FastAPI: 
 
+11. FastAPI With MongoDB
+
+12. Caching in FastAPI Applications
+
+13. Fastapi Metadata Configuration
+
+14. FastAPI with Docker
+
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
 
