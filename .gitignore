@@ -1,3 +1,8 @@
 # pycache files
 
 __pycache__/
+
+
+# cache dir
+cache_dir/
+
