@@ -34,6 +34,8 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 14. FastAPI with Docker
 
+15. Implementation of Pg bounce in FastAPI
+
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
 
