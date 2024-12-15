@@ -24,23 +24,23 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 9. Fastapi Template Rendering: A FastAPI project demonstrating how to render HTML templates using FastAPI. This project shows how to use Jinja2 templates for rendering dynamic HTML content and includes a basic project structure for easy expansion and maintenance.
 
-10. JWT Authentication In FastAPI: 
+10. JWT Authentication In FastAPI: A FastAPI project demonstrating how to implement JSON Web Token (JWT) authentication. This includes generating, signing, and validating tokens to secure API endpoints, along with examples for managing user authentication and authorization.
 
-11. FastAPI With MongoDB
+11. FastAPI With MongoDB: A FastAPI project showcasing integration with MongoDB. This project covers connecting to MongoDB, performing CRUD operations, and leveraging FastAPI's async capabilities for efficient database interactions.
 
-12. Caching in FastAPI Applications
+12. DiskCache in FastAPI Applications: A FastAPI project showcasing the implementation of DiskCache for caching API responses to optimize performance and reduce redundant computations. This project explores how to use DiskCache as a lightweight and file-based caching mechanism, including scenarios where it is suitable.
 
-13. Fastapi Metadata Configuration
+13. Fastapi Metadata Configuration: A FastAPI project focused on customizing API metadata, such as title, description, and version, to improve API documentation and usability. It includes tips on structuring metadata for OpenAPI specifications.
 
-14. FastAPI with Docker
+14. FastAPI with Docker: A FastAPI project demonstrating how to containerize applications using Docker. This includes creating a Dockerfile, defining dependencies, and running the application in isolated environments for ease of deployment.
 
-15. Implementation of Pg bounce in FastAPI
+15. Implementation of Pg bounce in FastAPI: A FastAPI project detailing the implementation of PgBouncer for connection pooling with PostgreSQL. It explains the setup process, configuration, and performance improvements when handling high volumes of database connections.
 
 16. FastAPI Metadata Configuration
 
-17. Celery in FastAPI
+17. Celery in FastAPI: A FastAPI project showcasing the integration of Celery for background task processing. This includes examples of setting up Celery with RabbitMQ.
 
-18. Redis in FastAPI
+18. Redis in FastAPI: 
 
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
