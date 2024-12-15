@@ -36,6 +36,12 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 15. Implementation of Pg bounce in FastAPI
 
+16. FastAPI Metadata Configuration
+
+17. Celery in FastAPI
+
+18. Redis in FastAPI
+
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
 
