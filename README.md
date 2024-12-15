@@ -36,11 +36,9 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 15. Implementation of Pg bounce in FastAPI: A FastAPI project detailing the implementation of PgBouncer for connection pooling with PostgreSQL. It explains the setup process, configuration, and performance improvements when handling high volumes of database connections.
 
-16. FastAPI Metadata Configuration
+16. Celery in FastAPI: A FastAPI project showcasing the integration of Celery for background task processing. This includes examples of setting up Celery with RabbitMQ.
 
-17. Celery in FastAPI: A FastAPI project showcasing the integration of Celery for background task processing. This includes examples of setting up Celery with RabbitMQ.
-
-18. Redis in FastAPI: 
+17. Redis in FastAPI: 
 
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
