@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #71b7e6, #9b59b6);
+            color: #fff;
+        }
+        h1 {
+            color: #fff;
+            margin-top: 20px;
+        }
+        .top-right {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #messages {
+            list-style-type: none;
+            padding: 0;
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+            max-height: 60vh;
+            overflow-y: auto;
+            flex-grow: 1;
+        }
+        #messages li {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .user-message {
+            background: #d1e7dd;
+            color: #0f5132;
+            align-self: flex-end;
+        }
+        .other-message {
+            background: #f8d7da;
+            color: #842029;
+            align-self: flex-start;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .message-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px; /* Adjusted margin */
+        }
+    </style>
+</head>
+<body>
+    <h1>Customer Support Chat</h1>
+    <div class="top-right">
+        <input id="nameInput" type="text" placeholder="Enter your name" />
+        <button onclick="setName()">Set Name</button>
+    </div>
+    <ul id="messages"></ul>
+    <div class="message-input">
+        <input id="messageInput" type="text" placeholder="Type a message..." disabled />
+        <button onclick="sendMessage()" disabled>Send</button>
+    </div>
+
+    <script>
+        let websocket;
+        let userName = '';
+        const clientId = Math.floor(Math.random() * 1000);
+
+        function setName() {
+            const nameInput = document.getElementById('nameInput');
+            userName = nameInput.value;
+            if (userName) {
+                nameInput.disabled = true;
+                document.getElementById('messageInput').disabled = false;
+                document.querySelector('button[onclick="sendMessage()"]').disabled = false;
+                websocket = new WebSocket(`ws://127.0.0.1:8000/ws/${userName}/${clientId}`);
+                websocket.onmessage = function(event) {
+                    const messages = document.getElementById('messages');
+                    const message = document.createElement('li');
+                    const isUserMessage = event.data.startsWith(`${userName}:`);
+                    message.className = isUserMessage ? 'user-message' : 'other-message';
+                    message.textContent = event.data;
+                    messages.appendChild(message);
+                    messages.scrollTop = messages.scrollHeight;
+                };
+                websocket.onclose = function() {
+                    if (userName) {
+                        websocket.send(`${userName} disconnected.`);
+                    }
+                };
+                websocket.send(`${userName} connected.`);
+            }
+        }
+
+        function sendMessage() {
+            const messageInput = document.getElementById('messageInput');
+            websocket.send(messageInput.value);
+            messageInput.value = '';
+        }
+    </script>
+</body>
+</html>

@@ -6,3 +6,6 @@ __pycache__/
 # cache dir
 cache_dir/
 
+# .txt file
+*.txt
+
