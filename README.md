@@ -38,7 +38,9 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 16. Celery in FastAPI: A FastAPI project showcasing the integration of Celery for background task processing. This includes examples of setting up Celery with RabbitMQ.
 
-17. Redis in FastAPI: 
+17. Redis in FastAPI: A FastAPI project demonstrating how to integrate Redis for caching and session management. This project covers connecting to a Redis server, performing CRUD operations, and utilizing Redis features to enhance application performance.
+
+18. FastAPI + Redis Pub/Sub: A FastAPI project showcasing the implementation of Redis Pub/Sub (Publish/Subscribe) messaging pattern. This project demonstrates how to set up a FastAPI application that can publish messages to Redis channels and subscribe to those channels to receive messages in real-time.
 
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
