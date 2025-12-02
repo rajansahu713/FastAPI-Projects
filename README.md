@@ -42,6 +42,8 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 18. FastAPI + Redis Pub/Sub: A FastAPI project showcasing the implementation of Redis Pub/Sub (Publish/Subscribe) messaging pattern. This project demonstrates how to set up a FastAPI application that can publish messages to Redis channels and subscribe to those channels to receive messages in real-time.
 
+19. FastAPI with GraphQL: A FastAPI project demonstrating how to integrate GraphQL for building flexible and efficient APIs. This project covers setting up GraphQL endpoints, defining schemas, and handling queries and mutations.
+
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
 
