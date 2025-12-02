@@ -1,0 +1,1 @@
+## In this example, we will perform CRUD operations using FastAPI with an SQLite database. We will use SQLAlchemy as the ORM to interact with the database.
