@@ -1,10 +1,10 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.params import Depends
 from sqlalchemy.orm import Session
-from .schemas import ItemCreate, Item, ItemUpdate
-from .databases import SessionLocal, engine
-from .models import DBItem, Base
-
+from schemas import ItemCreate, Item, ItemUpdate
+from databases import SessionLocal, engine
+from models import DBItem, Base
+from typing import List
 app = FastAPI()
 
 # Dependency to get the database session
@@ -24,6 +24,13 @@ async def startup():
 def root():
     return "server is running"
 
+@app.get("/items")
+async def get_all_items(db: Session = Depends(get_db)) -> List[Item]:
+    db_items = db.query(DBItem)
+    result = []
+    for item in db_items:
+        result.append(Item(**item.__dict__))
+    return result
 
 @app.post("/items")
 def create_item(item: ItemCreate, db: Session = Depends(get_db)) -> Item:
