@@ -44,6 +44,8 @@ This collection of projects demonstrates the versatility and capabilities of Fas
 
 19. FastAPI with GraphQL: A FastAPI project demonstrating how to integrate GraphQL for building flexible and efficient APIs. This project covers setting up GraphQL endpoints, defining schemas, and handling queries and mutations.
 
+20. Text-To-Sql with FastAPI: A FastAPI-based project that enables text-to-sql functionality.
+
 ## Instructions
 Follow the project-specific instructions provided in the README.md file within each project directory.
 
