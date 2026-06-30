@@ -19,6 +19,18 @@ pip install -r requirements.txt
 ```bash
 docker-compose up
 ```
+### Backend Server 
+Server will start(if you wanted to verify by pasting the below URL to anyBrowser)
+
+```bash
+http://localhost:8000/docs
+```
+### Frontend Server
+
+```bash
+http://localhost:8080/
+```
+<img src="StaticFile/text_to_sql1.png" width="900">
 
 ### API Endpoints
 * /api/v1/chat: Input natural language query to receive SQL response
