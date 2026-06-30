@@ -30,7 +30,8 @@ http://localhost:8000/docs
 ```bash
 http://localhost:8080/
 ```
-<img src="StaticFile/text_to_sql1.png" width="900">
+
+![Text to SQL](https://raw.githubusercontent.com/rajansahu713/FastAPI-Projects/main/StaticFile/text_to_sql1.png)
 
 ### API Endpoints
 * /api/v1/chat: Input natural language query to receive SQL response
